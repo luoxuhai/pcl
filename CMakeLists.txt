@@ -294,7 +294,7 @@ endif()
 ### ---[ Find universal dependencies
 
 # OpenMP (optional)
-option(WITH_OPENMP "Build with parallelization using OpenMP" TRUE)
+option(WITH_OPENMP "Build with parallelization using OpenMP" FALSE)
 if(WITH_OPENMP)
   find_package(OpenMP COMPONENTS C CXX)
 endif()
@@ -375,7 +375,7 @@ if(WITH_QHULL)
 endif()
 
 # Cuda
-option(WITH_CUDA "Build NVIDIA-CUDA support" TRUE)
+option(WITH_CUDA "Build NVIDIA-CUDA support" FALSE)
 if(WITH_CUDA)
   include("${PCL_SOURCE_DIR}/cmake/pcl_find_cuda.cmake")
 endif()
@@ -384,7 +384,7 @@ endif()
 # Reset VTK_FOUND to off
 set(VTK_FOUND OFF)
 # Find VTK - VTK has to be found before Qt, otherwise it can overwrite Qt variables
-option(WITH_VTK "Build VTK-Visualizations" TRUE)
+option(WITH_VTK "Build VTK-Visualizations" FALSE)
 if(WITH_VTK)
   if(ANDROID)
     message(WARNING "VTK is not supported on Android.")
@@ -401,13 +401,13 @@ if(WITH_QT)
 endif()
 
 #Find PCAP
-option(WITH_PCAP "pcap file capabilities in Velodyne HDL driver" TRUE)
+option(WITH_PCAP "pcap file capabilities in Velodyne HDL driver" FALSE)
 if(WITH_PCAP)
   find_package(Pcap)
 endif()
 
 # OpenGL and GLUT
-option(WITH_OPENGL "Support for OpenGL" TRUE)
+option(WITH_OPENGL "Support for OpenGL" FALSE)
 if(WITH_OPENGL)
   include("${PCL_SOURCE_DIR}/cmake/pcl_find_gl.cmake")
 endif()

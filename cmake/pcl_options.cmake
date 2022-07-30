@@ -54,16 +54,16 @@ option(PCL_NO_PRECOMPILE "Do not precompile PCL code for any point types at all.
 mark_as_advanced(PCL_NO_PRECOMPILE)
 
 # Enable or Disable the check for SSE optimizations
-option(PCL_ENABLE_SSE "Enable or Disable SSE optimizations." ON)
+option(PCL_ENABLE_SSE "Enable or Disable SSE optimizations." OFF)
 mark_as_advanced(PCL_ENABLE_SSE)
 
 # Enable or Disable the check for AVX optimizations
-option(PCL_ENABLE_AVX "Enable or Disable AVX optimizations." ON)
+option(PCL_ENABLE_AVX "Enable or Disable AVX optimizations." OFF)
 mark_as_advanced(PCL_ENABLE_AVX)
 
 if(UNIX)
   # Enable or Disable the check for March Native optimizations
-  option(PCL_ENABLE_MARCHNATIVE "Enable or Disable march native optimizations." ON)
+  option(PCL_ENABLE_MARCHNATIVE "Enable or Disable march native optimizations." OFF)
   mark_as_advanced(PCL_ENABLE_MARCHNATIVE)
 else()
   set(PCL_ENABLE_MARCHNATIVE FALSE)
@@ -88,7 +88,7 @@ mark_as_advanced(CMAKE_MSVC_CODE_LINK_OPTIMIZATION)
 # Project folders
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 
-option(BUILD_tools "Useful PCL-based command line tools" ON)
+option(BUILD_tools "Useful PCL-based command line tools" OFF)
 
 option(WITH_DOCS "Build doxygen documentation" OFF)
 
