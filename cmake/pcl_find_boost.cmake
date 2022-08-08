@@ -25,6 +25,10 @@ if(Boost_SERIALIZATION_FOUND)
   set(BOOST_SERIALIZATION_FOUND TRUE)
 endif()
 
+message(STATUS "Boost_INCLUDE_DIR: ${Boost_INCLUDE_DIR}")
+message(STATUS "Boost_LIBRARY_DIRS: ${Boost_LIBRARY_DIRS}")
+message(STATUS "Boost_LIBRARIES: ${Boost_LIBRARIES}")
+
 # Required boost modules
 set(BOOST_REQUIRED_MODULES filesystem date_time iostreams system)
 find_package(Boost 1.65.0 REQUIRED COMPONENTS ${BOOST_REQUIRED_MODULES})

@@ -6,7 +6,9 @@ if(POLICY CMP0074)
   # 2. Remove search paths with *_ROOT since they will be automatically checked
   cmake_policy(SET CMP0074 NEW)
 endif()
+# list(APPEND CMAKE_PREFIX_PATH "/usr/include/eigen3") 
 
+set(Boost_NO_WARN_NEW_VERSIONS 1)
 # Set target C++ standard and required compiler features
 set(CMAKE_CXX_STANDARD 14 CACHE STRING "The target C++ standard. PCL requires C++14 or higher.")
 set(CMAKE_CXX_STANDARD_REQUIRED ON)

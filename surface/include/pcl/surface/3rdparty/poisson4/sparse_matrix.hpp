@@ -320,7 +320,6 @@ namespace pcl
     SparseMatrix<T> SparseMatrix<T>::Transpose() const
     {
       SparseMatrix<T> M( _maxEntriesPerRow, rows );
-
       for (int i=0; i<rows; i++)
       {
         for(int ii=0;ii<rowSizes[i];ii++){
