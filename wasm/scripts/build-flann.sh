@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
 #--------------------------------------------
+# FLANN version: 1.9.1
+#
 # Reference
 #
 # https://github.com/flann-lib/flann/tree/1.9.1

@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
 #--------------------------------------------
+# PCL version: 1.12.1
+#
 # Reference
 #
 # https://pcl.readthedocs.io/projects/tutorials/en/master/compiling_pcl_posix.html

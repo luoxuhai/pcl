@@ -12,7 +12,7 @@ ROOT_DIR=$PWD
 DEPS_DIR=$ROOT_DIR/wasm/deps
 
 # Emsdk directory
-EMSDK_DIR=/Users/luoxuhai/Desktop/WebAssembly/emsdk
+# See: https://github.com/emscripten-core/emsdk#downloads--how-do-i-get-the-latest-emscripten-build
+# 
 # EMSDK_DIR=/emsdk
-
-source $EMSDK_DIR/emsdk_env.sh
+# source $EMSDK_DIR/emsdk_env.sh
