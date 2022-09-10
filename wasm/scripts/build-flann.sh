@@ -32,6 +32,6 @@ mkdir -p build
 cd $LIB_PATH/build
 
 emcmake cmake ${FLAGS[@]} ..
-emmake make j2 install
+emmake make -j2 install
 
 rm -rf !(include|lib)

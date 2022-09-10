@@ -14,7 +14,7 @@ source $(dirname $0)/common.sh
 LIB_PATH=$DEPS_DIR/boost
 
 FLAGS=(
-  -j6
+  -j4
   toolset=emscripten
   link=static
   runtime-link=static
@@ -38,7 +38,11 @@ LIBRARIES=(
 
 cd $LIB_PATH
 rm -rf $LIB_PATH/build
+rm -f project-config.jam
 mkdir -p build
+
+# Replace emscripten.jam
+/bin/cp -rf $SCRIPT_DIR/emscripten.jam $LIB_PATH/tools/build/src/tools
 
 ./bootstrap.sh
 ./b2 clean

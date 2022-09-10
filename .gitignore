@@ -1,4 +1,6 @@
 .DS_Store
 .vscode
 build
-deps
+/wasm/deps/boost
+/wasm/deps/flann
+/wasm/deps/eigen

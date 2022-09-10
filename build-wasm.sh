@@ -4,11 +4,18 @@
 # Directory Structure
 #
 # └── wasm
+#     ├── README.md
 #     ├── deps
-#     │   ├── boost v1.80.0
-#     │   ├── eigen v3.5.0
-#     │   └── flann  v1.9.1
+#     │   ├── boost
+#     │   ├── eigen
+#     │   └── flann
 #     └── scripts
+#         ├── build-boost.sh
+#         ├── build-flann.sh
+#         ├── build-pcl.sh
+#         ├── common.sh
+#         ├── download-deps.sh
+#         └── emscripten.jam
 #--------------------------------------------
 
 set -eo pipefail

@@ -11,6 +11,9 @@ ROOT_DIR=$PWD
 # Dependencies directory
 DEPS_DIR=$ROOT_DIR/wasm/deps
 
+# Scripts directory
+SCRIPT_DIR=$ROOT_DIR/wasm/scripts
+
 # Emsdk directory
 # See: https://github.com/emscripten-core/emsdk#downloads--how-do-i-get-the-latest-emscripten-build
 # 
