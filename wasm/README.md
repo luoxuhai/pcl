@@ -15,9 +15,11 @@ Directory Structure:
         ├── build-flann.sh
         ├── build-pcl.sh
         ├── common.sh
-        ├── download-deps.sh
+        ├── setup-deps.sh
         └── emscripten.jam
 ````
+
+Run `sh wasm/scripts/setup-deps.sh` or install manually:
 
 ### Boost
 > Version: 1.80.0
@@ -67,9 +69,11 @@ sh wasm/scripts/build-pcl.sh
         ├── build-flann.sh
         ├── build-pcl.sh
         ├── common.sh
-        ├── download-deps.sh
+        ├── setup-deps.sh
         └── emscripten.jam
 ```
+
+运行 `sh wasm/scripts/setup-deps.sh` 或者手动安装：
 
 ### Boost
 > 版本: 1.80.0

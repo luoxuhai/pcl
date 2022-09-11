@@ -1,6 +1,7 @@
 .DS_Store
 .vscode
 build
+.cache
 /wasm/deps/boost
 /wasm/deps/flann
 /wasm/deps/eigen

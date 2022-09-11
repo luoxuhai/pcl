@@ -14,7 +14,7 @@
 #         ├── build-flann.sh
 #         ├── build-pcl.sh
 #         ├── common.sh
-#         ├── download-deps.sh
+#         ├── setup-deps.sh
 #         └── emscripten.jam
 #--------------------------------------------
 
