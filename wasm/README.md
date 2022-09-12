@@ -93,12 +93,22 @@ sh wasm/scripts/build-pcl.sh
 
 ## 构建
 
-### 构建全部
+### 构建 Boost
 ```bash
-sh build-wasm.sh
+sh wasm/scripts/build-boost.sh
+```
+
+### 构建 FLANN
+```bash
+sh wasm/scripts/build-flann.sh
 ```
 
 ### 仅构建 PCL
 ```bash
 sh wasm/scripts/build-pcl.sh
+```
+
+### 构建全部
+```bash
+sh build-wasm.sh
 ```
