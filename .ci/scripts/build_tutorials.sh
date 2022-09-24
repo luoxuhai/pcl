@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 show_help() {
 cat << EOF

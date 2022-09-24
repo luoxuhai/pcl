@@ -19,7 +19,7 @@ Directory Structure:
         └── emscripten.jam
 ````
 
-Run `sh wasm/scripts/setup-deps.sh` or install manually:
+Run `wasm/scripts/setup-deps.sh` or install manually:
 
 ### Boost
 > Version: 1.80.0
@@ -41,12 +41,12 @@ Download address: https://gitlab.com/libeigen/eigen/-/releases/3.4.0
 
 ### Build all
 ```bash
-sh build-wasm.sh
+build-wasm.sh
 ````
 
 ### Build PCL only
 ```bash
-sh wasm/scripts/build-pcl.sh
+wasm/scripts/build-pcl.sh
 ````
 
 <hr>
@@ -73,7 +73,7 @@ sh wasm/scripts/build-pcl.sh
         └── emscripten.jam
 ```
 
-运行 `sh wasm/scripts/setup-deps.sh` 或者手动安装：
+运行 `wasm/scripts/setup-deps.sh` 或者手动安装：
 
 ### Boost
 > 版本: 1.80.0
@@ -95,20 +95,20 @@ sh wasm/scripts/build-pcl.sh
 
 ### 构建 Boost
 ```bash
-sh wasm/scripts/build-boost.sh
+wasm/scripts/build-boost.sh
 ```
 
 ### 构建 FLANN
 ```bash
-sh wasm/scripts/build-flann.sh
+wasm/scripts/build-flann.sh
 ```
 
 ### 仅构建 PCL
 ```bash
-sh wasm/scripts/build-pcl.sh
+wasm/scripts/build-pcl.sh
 ```
 
 ### 构建全部
 ```bash
-sh build-wasm.sh
+build-wasm.sh
 ```
