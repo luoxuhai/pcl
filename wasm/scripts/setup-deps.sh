@@ -9,7 +9,7 @@ mkdir -p ${CACHE_DIR}
 cd ${CACHE_DIR}
 
 # Download
-# curl -o boost.zip 'https://udomain.dl.sourceforge.net/project/boost/boost/1.80.0/boost_1_80_0.zip'
+curl -o boost.zip 'https://udomain.dl.sourceforge.net/project/boost/boost/1.80.0/boost_1_80_0.zip'
 curl -o eigen.zip 'https://gitlab.com/libeigen/eigen/-/archive/3.4.0/eigen-3.4.0.zip'
 git clone https://github.com/luoxuhai/flann.git --depth 1 --single-branch --branch wasm
 
